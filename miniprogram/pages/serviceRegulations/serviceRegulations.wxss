@@ -1,0 +1,19 @@
+/* miniprogram/pages/serviceRegulations/serviceRegulations.wxss */
+.title-wrap{
+  margin: 20rpx 50rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+
+.title-1{
+  font-weight: 500;
+}
+.title-text{
+  display: block;
+  text-indent: 1em;
+  margin: 10rpx 20rpx;
+  color: gray;
+}
+.text-strong{
+  color: red;
+}

@@ -1,0 +1,82 @@
+/* miniprogram/pages/main/main.wxss */
+#search-box{
+  box-shadow: 0 4rpx 16rpx 0 rgba(63, 59, 63, 0.1);
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  height: 90rpx;
+  background: #fff;
+}
+.search-warp{
+  border-radius: 40rpx;
+  background-color: rgb(245, 234, 234);
+  color: grey;
+  text-align: center;
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.swiper-box{
+  height: 200rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.swiper-wrap{
+  height: 192rpx;
+  width: 670rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+/**/
+.swiper{
+  height: 100%;
+  width: 100%;
+}
+.noticeBar{
+  display: flex;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  color: #f76a24;
+  background-color: #fefcec;
+  overflow: hidden
+}
+.noticeBar-icon{
+  display: flex;
+  margin-left: 30rpx;
+}
+.noticeBar-wrap{
+  position: relative;
+  flex: 1; /*占据右侧屏幕*/
+  margin: 0 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.noticeBar-wrap .noticeBar-content{
+  position: absolute;
+  transition-duration: 20s;
+}
+.special-column{
+  display: flex;
+  flex-flow: row wrap;
+  width: 750rpx;
+  padding: 0 5rpx;
+  background: #fff;
+}
+.special-column .special-column-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 185rpx;
+  width: 185rpx;
+  text-align: center;
+}
+.special-column-item > image{
+  margin: 0 auto;
+  height: 66rpx;
+  width: 66rpx;
+}
+.special-column-item > text{
+  font-size: 30rpx;
+}

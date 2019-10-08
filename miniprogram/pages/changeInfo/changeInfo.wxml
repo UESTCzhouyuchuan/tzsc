@@ -1,0 +1,62 @@
+<!--miniprogram/pages/changeInfo/changeInfo.wxml-->
+<!--昵称-->
+<view class='container'>
+  <view wx:if="{{curPage == 'name'}}">
+    <view class='single-wrap'>
+      <view class='single-wrap-text'>
+        <text>新昵称</text>
+      </view>
+      <input class='single-input' value="{{name}}" maxlength='13' focus='{{true}}' bindblur='textareaBlur' bindfocus='textareaFocus' bindinput='Input' data-info='name'></input>
+    </view>
+    <view class='tip' focus='{{true}}'>13个字以内，仅支持汉字,字母,数字,下划线</view>
+    <view class='save-btn-wrap' style='bottom: {{saveBottom}}px'>
+      <button class='save-btn' bindtap='save' data-info='name' hover-class='hover' hover-stay-time='{{stay_time}}'>保存</button>
+    </view>
+  </view>
+  <!--学号-->
+  <view wx:if="{{curPage == 'schoolNum'}}">
+    <view class='single-wrap'>
+      <view class='single-wrap-text'>
+        <text>学号</text>
+      </view>
+      <input class='single-input' type='number' value="{{schoolNum}}" focus='{{true}}' bindblur='textareaBlur' bindfocus='textareaFocus' bindinput='Input' data-info='schoolNum'></input>
+    </view>
+    <view class='tip'>请如实填写</view>
+    <view class='save-btn-wrap' style='bottom: {{saveBottom}}px'>
+      <button class='save-btn' catchtap='save' data-info='schoolNum' hover-class='hover' hover-stay-time='{{stay_time}}'>保存</button>
+    </view>
+  </view>
+  <!--简介-->
+  <view wx:if="{{curPage == 'introduce'}}">
+    <view class='multi-input'>
+      <textarea class='multi-input-text' value="{{introduce}}" maxlength='{{introduceMaxLen}}' placeholder='我知道你很有才华，所以你的简介肯定要秀我一脸' focus='{{true}}' bindblur='textareaBlur' bindfocus='textareaFocus' bindinput='Input' data-info='introduce'></textarea>
+      <view class='num'>{{introduceLen}}/{{introduceMaxLen}}</view>
+    </view>
+    <view class='save-btn-wrap' style='bottom: {{saveBottom}}px'>
+      <button class='save-btn' bindtap='save' data-info='introduce' hover-class='hover' hover-stay-time='{{stay_time}}'>保存</button>
+    </view>
+  </view>
+  <!--contact-->
+  <view wx:if="{{curPage == 'contact'}}">
+    <view class='contact'>
+      <view class='title'>我的联系卡</view>
+      <view class='title-1'>QQ号</view>
+      <view class='contact-input'>
+        <input focus='{{true}}' type='number' value="{{qq}}" placeholder='请填写你的qq号' bindinput='Input' data-info='qq'></input>
+      </view>
+      <view class='title-1'>微信</view>
+      <view class='contact-input'>
+        <input placeholder='请填写你的微信号' type='number' value="{{wx}}" bindinput='Input' data-info='wx'></input>
+      </view>
+      <view class='title-1'>手机号</view>
+      <view class='contact-input'>
+        <input placeholder='请填写你的电话' type='number' value="{{phone}}" bindinput='Input' data-info='phone'></input>
+      </view>
+      <button class='contact-btn' bindtap='save' data-info='contact' hover-class='hover' hover-stay-time='{{stay_time}}'>保存</button>
+    </view>
+  </view>
+  <view class='regu-wrap'>
+    <text>如果你有疑问，请阅读跳蚤市场</text>
+    <navigator url='/pages/serviceRegulations/serviceRegulations' class='regu' hover-class='none'>《服务条例》</navigator>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+/* miniprogram/pages/system/system.wxss */
+.wrap{
+  margin-top: 2rpx;
+  padding: 50rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: #fff;
+  font-size: 30rpx;
+}
+.wrap-item{
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid rgba(0,0,0,0.4);
+}
+.wrap-item text:first-child{
+  width: 300rpx;
+  text-align: right;
+}
+.wrap-item text:last-child{
+  width: 200rpx;
+  text-align: left;
+}

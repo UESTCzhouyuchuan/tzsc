@@ -1,0 +1,38 @@
+<!--miniprogram/pages/new/new.wxml-->
+<view class='container' catchtap='textareaTipBlur'>
+  <scroll-view class='scroll-wrap'>
+    <view class="scroll-item {{curTab == 0 ? 'curTab':''}}" catchtap='selectTab' data-index="0">
+      <text class="icon-goodsnew">发布闲置</text>
+    </view>
+    <view class="scroll-item {{curTab == 1 ? 'curTab':''}}" catchtap='selectTab' data-index="1">
+      <text class='icon-moneybagfill'>发布悬赏令</text>
+    </view>
+  </scroll-view>
+  <swiper current='{{curTab}}' bindchange='switchTab' circular='{{false}}' class='swiper-wrap' style="height: {{swiperHeight}}px">
+    <swiper-item>
+      <view class='camera'>
+        <text class='icon-camera'></text>
+        <text>添加照片</text>
+      </view>
+      <view class='name-introduce'>
+        <view class='name'>
+          <input maxlength='30' placeholder='标题'></input>
+          <text style='font-size: 30rpx;color: #aaa;'>30</text>
+        </view>
+        <view class='introduce'>
+          <textarea placeholder='输入详细描述，比如规格尺寸，新旧，转手原因，入手渠道~' value="{{introduce}}" focus='{{textareaFocus}}' bindblur='' bindfocus='textareaBindFocus' bindinput='textareaInput' catchtap='noperate' confirm-hold="{{true}}">
+          </textarea>
+        </view>
+      </view>
+      <view class='school-tag-price'>
+        <view class='school'></view>
+        <view class='tag'></view>
+        <view class='price'></view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<scroll-view wx:if='{{showTextareaTips}}' class='tips' scroll-x='{{true}}' style='bottom:{{showTextareaTipsBottom}}px'>
+  <input wx:for='{{textareaNotice}}' wx:key value='{{item}}' catchtap='textareaTip' data-textarea-tip="{{item}}">
+  </input>
+</scroll-view>

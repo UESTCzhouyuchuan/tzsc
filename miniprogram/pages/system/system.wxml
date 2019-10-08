@@ -1,0 +1,61 @@
+<!--miniprogram/pages/system/system.wxml-->
+<view class='container'>
+  <view class='wrap'>
+    <view class='wrap-item'>
+      <text>品牌</text>
+      <text>{{brand}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>型号</text>
+      <text>{{model}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>像素比</text>
+      <text>{{pixelRatio}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>屏幕宽度</text>
+      <text>{{screenWidth}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>屏幕高度</text>
+      <text>{{screenHeight}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>可使用窗口宽度</text>
+      <text>{{windowWidth}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>可使用窗口高度</text>
+      <text>{{windowHeight}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>状态栏的高度</text>
+      <text>{{statusBarHeight}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>语言</text>
+      <text>{{language}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>微信版本号</text>
+      <text>{{version}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>操作系统及版本</text>
+      <text>{{system}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>客户端平台</text>
+      <text>{{platform}}</text>
+    </view>
+    <view class='wrap-item'>
+      <text>字体大小</text>
+      <text>{{fontSizeSetting}}px</text>
+    </view>
+    <view class='wrap-item'>
+      <text>客户端基础库版本</text>
+      <text>{{SDKVersion}}</text>
+    </view>
+  </view>
+</view>

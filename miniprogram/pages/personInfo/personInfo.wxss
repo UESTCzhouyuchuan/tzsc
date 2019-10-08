@@ -1,0 +1,95 @@
+/* miniprogram/pages/personInfo/personInfo.wxss */
+#top{
+  box-shadow: 0 8rpx 18rpx rgba(151, 147, 147, 0.07);
+  margin-top: 2rpx;
+  height: 200rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container{
+  justify-content: start;
+}
+.num-box{
+  height: 100rpx;
+  text-align: center;
+}
+.num{
+  font-size: 60rpx;
+  color: orange;
+}
+.prog-wrap{
+  height: 20rpx;
+  margin: 0 50rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.prog{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-radius: 20rpx;
+  border: 2rpx solid orange;
+  background-color: orange;
+  background-clip: content-box;
+  box-sizing: border-box;
+}
+.form{
+  background-color: #fff;
+  margin: 10rpx 0 0 0;
+  box-shadow: 0 -8rpx 18rpx rgba(151, 147, 147, 0.07);
+}
+.form-item{
+  padding: 1rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  position: relative;
+}
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 60rpx;
+}
+.form-item-content-end{
+  margin-right: 60rpx;
+  color: gray;
+}
+.form-item::before{
+  font-family: "iconfont";
+  display: block;
+  content: "\e6a3";
+  position: absolute;
+  font-size: 34rpx;
+  color: #aaa;
+  line-height: 30rpx;
+  height: 30rpx;
+  width: 30rpx;
+  text-align: center;
+  top: 0rpx;
+  bottom: 0;
+  right: 30rpx;
+  margin: auto;
+}
+.form >.form-item:last-child{
+  border-bottom: 0;
+}
+.regu-wrap{
+  color: gray;
+  margin-top: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  text-align: center;
+}
+.regu{
+  color: green;
+  display: inline;
+}

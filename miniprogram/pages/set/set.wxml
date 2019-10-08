@@ -1,0 +1,12 @@
+<!--miniprogram/pages/set/set.wxml-->
+<view class='container'>
+  <view class='form'>
+    <view class='clear form-item' bindtap='clearStor'>
+      <text>缓存清理</text>
+      <text class='icon-delete'></text>
+    </view>
+  </view>
+  <view id='bottom'>
+    <button bindtap='logout' disabled="{{!login}}" class='logoutBtn'>退出登陆</button>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<view class='container'>
+  <view id='top'>
+    <view class='avator-box'>
+      <open-data wx:if="{{login}}" class='avator' type='userAvatarUrl'></open-data>
+      <button wx:else class='avatarBtn' lang='zh_CN' open-type='getUserInfo'
+       bindgetuserinfo='login'
+       disabled='{{!agreeRegulations}}'>
+        <image src="/images/nologin.png" class='avator-image'></image>
+      </button>
+    </view>
+    <open-data wx:if="{{login}}" type='userNickName' style="margin-top: 20rpx"></open-data>
+    <view wx:else style='text-align: center'>
+      <view>登陆/注册</view>
+      <view  class='agree-wrap'>
+        <checkbox-group class='agree-check' bindchange='agree'>
+          <label>
+            <checkbox class='check' checked='{{agreeRegulations}}'></checkbox>我已仔细阅读
+          </label>
+        </checkbox-group>
+        <navigator url='/pages/serviceRegulations/serviceRegulations' class='agree-regu' hover-class='none'>《服务条例》</navigator>
+      </view>
+    </view>
+  </view>
+  <view id='middle'>
+    <view class='flex-item'>
+      <image src='/images/sended2.png'></image>
+      <text style='font-size:30rpx;'>我发布的</text>
+    </view>
+    <view class='flex-item'>
+      <image src='/images/love.png' style='height: 80rpx;width: 80rpx;'></image>
+      <text style='font-size:30rpx;'>收藏夹</text>
+    </view>
+  </view>
+  <view id='account'>
+    <view class='account-header'>我的账户</view>
+    <view class='account-box'>
+      <navigator url="/pages/set/set" class='account-box-item'>
+        <text class='icon-settingsfill' style='color: #0082ff;margin-right: 10rpx;'></text>
+        <text>设置</text>
+      </navigator>
+      <navigator url="/pages/personInfo/personInfo" class='account-box-item'>
+        <text class='icon-people' style='color: green;margin-right: 10rpx;'></text>
+        <text class="{{ infoFillDot ? 'dot' : ''}}">个人信息</text>
+      </navigator>
+      <navigator url="/pages/system/system" class='account-box-item'>
+        <text class='icon-mobilefill' style='color: orange;margin-right: 10rpx;'></text>
+        <text>系统信息</text>
+      </navigator>
+    </view>
+  </view>
+  <view id='bottom'>
+    <text>Copyright@zhouyuchuan.All right reserved.</text>
+  </view>
+</view>

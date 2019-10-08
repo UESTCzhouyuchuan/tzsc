@@ -1,0 +1,14 @@
+<view class='container'>
+  <view id='search-box'>
+    <form class='form-wrap'>
+      <view class='search-wrap'>
+        <text class='icon-search'></text>
+        <input type='search' class='search' focus='{{true}}' placeholder='{{sendkey}}' value="{{key}}" bindinput='searchInput' />
+        <button hidden="{{!key}}" catchtap='deleteInput' form-type="reset" hover-class='none' class='icon-roundclosefill' style='font-size: 32rpx;opacity:0.5'></button>
+      </view>
+    </form>
+    <view class='action'>
+      <button class='search-btn shadow-blur' hover-class='button-hover'>搜索</button>
+    </view>
+  </view>
+</view>

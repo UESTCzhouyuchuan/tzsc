@@ -1,0 +1,53 @@
+<!--miniprogram/pages/main/main.wxml-->
+<view class='container'>
+  <view id='search-box'>
+    <view class='search-warp' catchtap='goToSearch'>
+      <text class='icon-search'>  {{recommends[recommendIndex]}}</text>
+    </view>
+  </view>
+  <view class='swiper-box'>
+    <swiper class='swiper-wrap' indicator-dots='{{true}}' circular="{{true}}" autoplay='{{true}}' easing-function='linear' animation=''>
+      <swiper-item wx:for='{{imgs}}' wx:key>
+        <image src='{{item}}' class='swiper'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='noticeBar'>
+    <text class='icon-notificationfill noticeBar-icon'></text>
+    <view class='noticeBar-wrap'>
+      <view class='noticeBar-content' animation="{{noticeAnimation}}">{{notice}}</view>
+    </view>
+  </view>
+  <view class='special-column'>
+    <view class='special-column-item'>
+      <image src='/images/book.png'></image>
+      <text>书籍</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/graduate.png'></image>
+      <text>毕业捡漏</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/furniture.png'></image>
+      <text>寝室家具</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/exam.png'></image>
+      <text>考试相关</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/clothes.png'></image>
+      <text>服装鞋帽</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/phone.png'></image>
+      <text>手机平板</text>
+    </view>
+    <view class='special-column-item'>
+      <image src='/images/computer.png'></image>
+      <text>电脑</text></view>
+    <view class='special-column-item'>
+      <image src='/images/room.png'></image>
+      <text>租房</text></view>
+  </view>
+</view>

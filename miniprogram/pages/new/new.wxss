@@ -1,0 +1,114 @@
+/* miniprogram/pages/new/new.wxss */
+.container{
+  position: relative;
+}
+.scroll-wrap{
+  background-color: #d7f0db;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.scroll-item{
+  display: inline-block;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 30rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+.scroll-item:first-child{
+  color: #1cbbb4;
+}
+.scroll-item:last-child{
+  color: #8dc63f;
+}
+.curTab{
+  border-bottom: 4rpx solid #fff;
+}
+.swiper-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+}
+.camera{
+  margin-top: 20rpx;
+  background-color: #fff;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 25rpx;
+  color: #8799a3;
+}
+.icon-camera{
+  color: #aaa;
+  font-size: 3em;
+  font-weight: lighter;
+}
+.name-introduce{
+  margin-top: 20rpx;
+  padding: 30rpx 30rpx 10rpx;
+  background-color: #fff;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.name{
+  height: 80rpx;
+  font-size: 35rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid rgb(206, 204, 204);
+  display: flex;
+  justify-content: space-around;
+}
+.name input{
+  flex: 1;
+  padding-right: 20rpx;
+  height: 80rpx;
+}
+.introduce{
+  width: 100%;
+  padding-top: 20rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.introduce textarea{
+  font-size: 25rpx;
+  width: 100%;
+  flex:1;
+}
+.tips{
+  display: flex;
+  box-sizing: border-box;
+  white-space: nowrap;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fff;
+  color: #666;
+  overflow: hidden;
+}
+.tips input{
+  display: inline-block;
+  height: 80rpx;
+  width: 150rpx;
+}
+.tip-item{
+  font-size: 30rpx;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  box-sizing: border;
+  border-radius: 4rpx;
+  margin: 0 10rpx;
+  padding: 0 25rpx;
+  background: #f5f5f5;
+}
+::-webkit-scrollbar {
+  display: none;
+}

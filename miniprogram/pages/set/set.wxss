@@ -1,0 +1,33 @@
+/* miniprogram/pages/set/set.wxss */
+.container{
+  justify-content: space-between;
+}
+#bottom{
+  box-shadow: 0 -8rpx 8rpx rgba(172, 155, 155, 0.1);
+  height: 100rpx;
+  background-color: white;
+}
+.logoutBtn{
+  margin: 15rpx 30rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  color: white;
+  line-height: 80rpx;
+  background-color: rgb(245, 60, 60);
+}
+.form{
+  background-color: #fff;
+  margin-top: 50rpx;
+  padding: 0 40rpx;
+  box-shadow: 0 4rpx 8rpx rgba(179, 176, 176, 0.1),
+              0 -4rpx 8rpx rgba(182, 178, 178, 0.1);
+}
+.form-item{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.clear{
+  display: flex;
+  justify-content: space-between;
+}

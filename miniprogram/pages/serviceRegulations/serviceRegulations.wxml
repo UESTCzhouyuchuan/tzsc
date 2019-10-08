@@ -1,0 +1,36 @@
+<!--miniprogram/pages/serviceRegulations/serviceRegulations.wxml-->
+<view class='contianer'>
+  <view style='font-size: 50rpx;font-wight: 700;text-align: center;margin: 50rpx;'>跳蚤市场服务协议</view>
+  <view class='title-wrap'>
+    <view class='title-1'>1.引言</view>
+    <p class='title-text'>(1)为了使用本软件的服务，请你仔细阅读，否则因为你
+      <text class='text-strong'>本人的疏忽造成的损失</text>，本软件不负任何责任。</p>
+    <p class='title-text'>(2)本软件致力于服务电子科技大学（位于天府之国成都，985高校，双一流A类国家建设高校）在校大学生，如果你不是，你将无权使用本软件服务，否则，如果对你本人造成损失，本软件不负任何责任，如果因为你的行为造成他人损失，你将承担有关法律责任。</p>
+    <p class='title-text'>(3)本软件是一个信息交换平台，致力于解决在校生二手商品
+      <text class='text-strong'>信息交换不便</text>的问题，举个例子，学生A说他有想出手的物品，所以他就发布出来，学生B想入一个二手物品，本软件的作用就是把A想卖的想法传达到B的耳朵中，这就是信息交换。</p>
+    <p class='title-text'>(4)
+      <text class='text-strong'>本软件不涉及任何线上交易的因素，从而也不会涉及支付，钱财，交易等问题</text>，本软件也不会提供这些服务，后续操作请线下完成</p>
+    <p class='title-text'>(5)本软件提供的任何服务完全免费，
+      <text class='text-strong'>不收取任何费用</text>，切勿给骗子送钱。</p>
+    <p class='title-text'>(6)本软件为个人小程序，版权所有人为周玉川(成电信软17级)先生。</p>
+    <p class='title-text'>(7)温馨提示，互联网环境鱼龙混杂，不可
+      <text class='text-strong'>轻信他人</text>，请线下当面交易，切勿给骗子送钱。</p>
+  </view>
+  <view class='title-wrap'>
+    <view class='title-1'>2.协议范围</view>
+    <p class='title-text'>当你使用本软件提供的服务时，本协议生效。</p>
+  </view>
+  <view class='title-wrap'>
+    <view class='title-1'>3.个人信息保护</view>
+    <p class='title-text'>(1)首先，本软件会严格遵守《个人信息保护法》, 保证用户的合法权益</p>
+    <p class='title-text'>(2)你的信息仅仅在本软件提供服务的范围内使用，不会也不可能出现到其他区域，更不会出现贩卖,泄露信息等违法行为。</p>
+  </view>
+  <view class='title-wrap'>
+    <view class='title-1'>4.关于本软件</view>
+    <p class='title-text'>本软件是一个公益项目，属于成电互助系列的一部分，其中开发使用过程中产生的网络费用由本人和赞助人承担，不会向用户收取任何费用，但是保留用户向本软件赞助的权力。</p>
+  </view>
+  <view class='title-wrap'>
+    <view class='title-1'>5.最终解释权归本软件所有</view>
+    <p class='title-text'>最终解释权归本软件所有</p>
+  </view>
+</view>

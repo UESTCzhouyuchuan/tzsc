@@ -1,0 +1,49 @@
+<!--miniprogram/pages/personInfo/personInfo.wxml-->
+<view class='container'>
+  <view id='top'>
+    <text class='num-box'>已经完成<text class='num'>{{num}}</text>
+    <text style='color:orange'>%</text></text>
+    <view class='prog-wrap'>
+      <view class='prog' style='padding-right: {{100-num}}%'></view>
+    </view>
+  </view>
+  <view class='form'>
+    <view class='form-item' catchtap='changeAvatar' hover-class='hover' hover-stay-time='{{stay_time}}'>
+      <text>头像</text>
+      <image src='{{avatarUrl}}' class='avatar'></image>
+    </view>
+    <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}' bindtap='changeInfo' data-key = 'name'>
+      <text>昵称</text>
+      <text class='form-item-content-end'>{{name}}</text>
+    </view>
+    <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}' bindtap='changeSex'>
+      <text>性别</text>
+      <text class='form-item-content-end'>{{sex[gender]}}</text>
+    </view>
+    <picker mode='date' class='picker' value="{{birth ? birth: '2000-01-01'}}" bindchange='changeDate' >
+      <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}'>
+        <text style=''>出生日期</text>
+        <view class='form-item-content-end'>{{birth}}</view>
+      </view>
+    </picker>
+    <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}' bindtap='changeInfo' data-key = 'introduce'>
+      <text>个人简介</text>
+      <text class='form-item-content-end' style='font-size: 25rpx;'>{{introduce}}</text>
+    </view>
+  </view>
+  <view class='form'>
+    <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}' bindtap='changeInfo' data-key = 'schoolNum'>
+      <text>学号</text>
+      <text class='form-item-content-end'>{{schoolNum}}</text>
+    </view>
+    <view class='form-item' hover-class='hover' hover-stay-time='{{stay_time}}' bindtap='changeInfo' data-key = 'contact'>
+      <view class="{{contactDot ? 'dot' : ''}}">
+        联系卡
+      </view>
+    </view>
+  </view>
+  <view class='regu-wrap'>
+    <text>如果你有疑问，请阅读跳蚤市场</text>
+    <navigator url='/pages/serviceRegulations/serviceRegulations' class='regu' hover-class='none'>《服务条例》</navigator>
+  </view>
+</view>

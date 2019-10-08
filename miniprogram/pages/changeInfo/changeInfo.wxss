@@ -1,0 +1,107 @@
+/* miniprogram/pages/changeInfo/changeInfo.wxss */
+.single-wrap{
+ display: flex;
+ margin-top: 50rpx;
+ justify-content: start;
+ box-sizing: border-box;
+ height: 100rpx;
+ padding: 20rpx 20rpx;
+ background: #fff;
+ font-size: 30rpx;
+}
+.single-wrap-text{
+  height: 40rpx;
+  margin: 10rpx 10rpx 10rpx 30rpx;
+  line-height: 40rpx;
+  width: 100rpx;
+  text-align: left;
+  border-right: 2rpx solid rgba(0, 0, 0, 0.3);
+}
+.container{
+  justify-content: start;
+  position: relative;
+}
+input.single-input{
+  padding: 0 20rpx;
+  height: 60rpx;
+}
+.tip{
+  padding-left: 40rpx;
+  color: gray;
+  font-size: 25rpx;
+  text-align: left;
+  margin-top: 20rpx;
+}
+.multi-input{
+  margin: 0;
+  background-color: #fff;
+  position: relative;
+}
+textarea.multi-input-text {
+  font-size: 30rpx;
+  padding: 40rpx 40rpx 60rpx 40rpx;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 200rpx;
+}
+.num{
+  position: absolute;
+  bottom: 5rpx;
+  right: 20rpx;
+  color: gray;
+  font-size: 20rpx;
+}
+.contact{
+  padding: 20rpx 40rpx;
+  background: #fff;
+}
+.title{
+  font-size: 44rpx;
+  margin: 20rpx 0;
+}
+.title-1{
+  font-size: 30rpx;
+  margin: 20rpx 20rpx 0 0;
+}
+.contact-input{
+  font-size: 30rpx;
+  margin: 0;
+  height: 80rpx;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+}
+.contact-input input{
+  padding: 20rpx 0;
+}
+.save-btn{
+  margin: 10rpx 30rpx;
+  background: rgb(224, 19, 19);
+  color: white;
+  line-height: 80rpx;
+}
+.save-btn-wrap{
+  position: absolute;
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+}
+button.contact-btn{
+  display: block;
+  height: 80rpx;
+  margin: 50rpx 100rpx 0 100rpx;
+  background-color: rgb(22, 156, 22);
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: #fff;
+}
+.regu-wrap{
+  color: gray;
+  margin-top: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  text-align: center;
+}
+.regu{
+  color: green;
+  display: inline;
+}

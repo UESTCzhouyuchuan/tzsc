@@ -1,0 +1,42 @@
+/**app.wxss**/
+@import 'icon.wxss';
+.container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: start;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+.dot{
+  position: relative;
+}
+.dot::before, dot::after{
+  border-radius: 50%;
+  display: block;
+  content: '';
+  position: absolute;
+  height: 15rpx;
+  width: 15rpx;
+  top: -10rpx;
+  right: -10rpx;
+  background-color: #dd514c;
+  font-size: 20rpx;
+}
+.hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}
